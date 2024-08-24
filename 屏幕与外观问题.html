@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问题解答</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative; /* 使返回按钮可以绝对定位 */
+        }
+
+        .content h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>问题解答</h1>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-button">返回目录</a> <!-- 返回目录按钮 -->
+
+        <div class="content">
+            <h2>常见问题解答</h2>
+
+            <div id="screen-issues">
+                <h3>Q：手持机屏幕闪烁；屏幕有水印；屏幕横向有线；屏幕竖向有线；触摸干扰错乱；屏幕误触；部分触摸无反应；屏幕显示偏移；屏幕背光不亮</h3>
+                <p>A：</p>
+                <p>1、关机重启<br>
+                2、升级固件（根据新旧平台给相对应固件）<br>
+                3、如有维修能力，可拆开机器重新拔插下排线，有几率能解决问题。<br>
+                4、返厂维修或通过更换屏幕解决问题</p>
+            </div>
+
+            <div id="screen-black-white-touch">
+                <h3>Q：白屏；黑屏；触摸没反应</h3>
+                <p>A：</p>
+                <p>屏幕损坏或排线接触不良<br>
+                1、喷码机关机重启<br>
+                2、如有维修能力，可拆开机器重新拔插下排线<br>
+                3、返厂维修或通过更换屏幕解决问题</p>
+            </div>
+
+            <div id="button-issues">
+                <h3>Q：按钮不回弹或者按不下去</h3>
+                <p>A：</p>
+                <p>按钮损坏<br>
+                更换按钮或返修</p>
+            </div>
+
+            <div id="roller-issues">
+                <h3>Q: 辊轮不流畅</h3>
+                <p>A：</p>
+                <p>现象：辊轮无法正常使用，打印时卡顿<br>
+                解决：查看辊轮橡胶圈是否错位或有异物卡住，若无法解决则返修/更换辊轮座</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

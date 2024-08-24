@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问题解答</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative; /* 使返回按钮可以绝对定位 */
+        }
+
+        .content h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>问题解答</h1>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-button">返回目录</a> <!-- 返回目录按钮 -->
+
+        <div class="content">
+            <h2>常见问题解答</h2>
+
+            <div id="card-machine">
+                <h3>Q：卡机</h3>
+                <p>A：</p>
+                <p>软件bug<br>
+                1、拔掉电池重新开机。<br>
+                2、升级到最新固件<br>
+                3、拔电池，重新开机和升级固件来解决问题</p>
+            </div>
+
+            <div id="auto-shutdown">
+                <h3>Q：开机后自动关机</h3>
+                <p>A：</p>
+                <p>电池没电<br>
+                1、插上适配器检查确认是否正常开机，如正常是电量低问题，插适配器充满电后正常开机；<br>
+                2、电池问题，更换电池<br>
+                3、主板问题，更换主板（国外客户更换部件前请咨询产品部意见）</p>
+                <p>主板损坏/电池板损坏<br>
+                1、更换电池检查是否能够正常开机<br>
+                2、拆除电池，插上适配器开机检查<br>
+                3、如确定无法排除问题，返厂维修或更换主板或电源板（国外客户更换部件前请咨询产品部意见）</p>
+            </div>
+
+            <div id="no-boot">
+                <h3>Q：开不了机(排除黑屏)</h3>
+                <p>A：</p>
+                <p>开机按键损坏<br>
+                1、按下开机按键没有听到“哒”（按键按下所发出的响声）<br>
+                2、插上适配器，LED指示灯是否亮，可否正常开机<br>
+                3、若能正常充电，按键无反馈或长按无法开机，则需确认主板按键是否损坏。<br>
+                4、如损坏，需更换主板按键（国外客户更换部件前请咨询产品部意见）</p>
+                <p>电池没电<br>
+                1、插入电源适配器可以开机，拔掉适配器就关机<br>
+                2、插入电源适配器有充电符号，充了一段时间电量数字没有变化。<br>
+                3、换了新电池正常工作电池问题，不可以正常工作电源板问题<br>
+                4、电源板问题需要拆机维修，考虑返厂或请客户更换（国外客户更换部件前请咨询产品部意见）</p>
+                <p>主板损坏/电池板损坏<br>
+                1、插入电源适配器不能开机，尾灯不亮，则更换主板；<br>
+                2、插入电源适配器可以开机，没有充电符号，电池电量低。适配器问题。<br>
+                3、更换符合标准的电源适配器。</p>
+            </div>
+
+            <div id="system-boot">
+                <h3>Q：开机进不了系统</h3>
+                <p>A：</p>
+                <p>电量低<br>
+                1、按开机键红灯闪，插入电源适配器，长按开机按键开机，等充电后一段时间过再开机，一般充满电时间需要3H。<br>
+                2、对机器继续充电，排除电量低所导致的问题</p>
+                <p>主板问题卡地球或Starting界面<br>
+                1、拔掉电池重新开机<br>
+                2、重新升级固件<br>
+                3、如果多次发生，更换主板</p>
+            </div>
+
+            <div id="boot-reset">
+                <h3>Q：开机时间变初始</h3>
+                <p>A：</p>
+                <p>主板纽扣电池没电<br>
+                1、让客户提供产品序列号（因新旧平台电池是不一样的）<br>
+                2、更换纽扣电池，序列号B开头的一种电池，E开头的一种电池</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

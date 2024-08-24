@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问题解答</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative; /* 使返回按钮可以绝对定位 */
+        }
+
+        .content h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>问题解答</h1>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-button">返回目录</a> <!-- 返回目录按钮 -->
+
+        <div class="content">
+            <h2>常见问题解答</h2>
+
+            <div id="charge-problem">
+                <h3>Q：充不进电</h3>
+                <p>A：</p>
+                <p>接口接触不良<br>
+                1、确认充电次数，是否是使用过程中不良<br>
+                2、尝试适配器重复多次插入充电接口并转动<br>
+                3、适配器插头是否有插到底，是否有异物掉入孔中。<br>
+                4、更换另一个适配器插入接口确认一下<br>
+                5、排除上述问题后无法解决则为电源模块问题，返厂维修或更换模块（国外客户自行维修前请询问产品部意见）</p>
+                <p>适配器损坏，电池板损坏<br>
+                1、用其他同规格适配器插入，看充电提示是否有反应<br>
+                2、确认是否曾经使用非原厂充电器，大于9V以上的充电器有损坏适配器的风险，如客户使用16.8V充电器有可能损坏设备电源板<br>
+                3、打开机器，观察电源板是否有发黑的现象<br>
+                4、排除适配器问题后，如电源板有发黑等情况，请返厂维修或更换电源板/电源模块。</p>
+                <p>主板损坏，排线接触不良<br>
+                1、确认充电次数和打印次数，查看是否是使用过程中不良<br>
+                2、更换另一个适配器插入接口进行确认<br>
+                3、如有维修能力，请客户重新组装排线（或返厂），如组装排线后无法解决问题，则需要更换主板或更换模块以解决问题（国外客户自行维修前请询问产品部意见）</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

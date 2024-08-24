@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问题解答</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative; /* 使返回按钮可以绝对定位 */
+        }
+
+        .content h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>问题解答</h1>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-button">返回目录</a> <!-- 返回目录按钮 -->
+
+        <div class="content">
+            <h2>常见问题解答</h2>
+
+            <div id="print-quality-issues">
+                <h3>Q：打印效果差，不清晰</h3>
+                <p>A：</p>
+                <h3>【墨盒问题】</h3>
+                常见处理方法：夹上墨盒夹，摇晃墨盒30秒，使用附带清洁液对喷头进行清洁，将清洁液直接喷在喷头上，用所附清洁布擦干净喷头，再使用附带的墨盒夹和注射器对喷头进行抽吸。<br>
+                查看墨盒状态，是否有漏墨、排线损坏等破损？<br>
+                查看喷头喷嘴是否有异物？酒精棉片清洁后塑料膜下是否有无法清理的墨水？<br>
+                打印测试页和对着白纸点击清洁喷嘴，具体效果怎么样？是否有白线，散墨？<br>
+                查看墨盒底部52Pin处，是否有异常或污损？<br>
+                （可选）如果客户有另外的设备，请客户将墨盒更换到其他设备上，再尝试打印，比较打印的样稿，是否有改善或者恶化？</p>
+
+ 	<img src="image/22.png" style="width: 700px; height: auto;" alt="索引图">
+                <h3>【墨盒仓问题】</h3>
+                <p>A：</p>
+                <p>常见处理方法：用气吹清理针脚上的脏污和异物，使用棉布沾酒精对触点处进行清洁。<br>
+                查看墨盒仓，在光照好（如用手电照着）的情况下用手机拍照，请客户发原图，查看52Pin针脚处是否有污损或断针，断针问题需返厂或更换组件。</p>
+
+                <h3>【霍尔板问题】</h3>
+                <p>A：</p>
+                <p>排除以上问题后，有可能是设备的霍尔板出现了问题，返厂或通过更换霍尔板解决。</p>
+            </div>
+
+            <div id="chip-recognition-issues">
+                <h3>Q：芯片无法识别</h3>
+                <p>A：</p>
+                <p>常见处理方法：<br>
+                1、查看芯片是否脏污，识别芯片的针脚是否完好。<br>
+                2、更换机器，查看该墨盒在其他同型号设备上是否可以正常识别。<br>
+                3、更换墨盒，查看对应型号的其他墨盒在该机器上能否正常识别。<br>
+                查看报错代码。<br>
+                查看芯片型号与设备型号是否对应。<br>
+                查看墨盒的芯片是否安装正常。<br>
+                查看52Pin后侧的芯片识别针脚处，排查脏污和断针。<br>
+                若无法解决，可能是识别芯片或主板出现了问题，返厂分析。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

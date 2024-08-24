@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问题解答</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative; /* 使返回按钮可以绝对定位 */
+        }
+
+        .content h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>问题解答</h1>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-button">返回目录</a> <!-- 返回目录按钮 -->
+
+        <div class="content">
+            <h2>常见问题解答</h2>
+
+            <div id="print-transparency-issues">
+                <h3>Q: 打印物体为透明颜色</h3>
+                <p>A：</p>
+                <p>现象：光电无法感应，光电传感器不适用<br>
+                解决：使用光纤传感器</p>
+            </div>
+
+            <div id="photoelectric-sensor-issues">
+                <h3>Q: 光电传感器触发没反应（光电太灵敏）</h3>
+                <p>A：</p>
+                <p>现象：观察光电传感器信号灯是否一直处于常亮的状态<br>
+                解决：光电传感器设置问题，逆时针调节光电传感器尾部螺丝至信号灯灭（被打印物品经过时光电被触发，无物品时光电不触发是目标状态）</p>
+
+                <h3>Q: 光电传感器没反应（光电灵敏度低）</h3>
+                <p>A：</p>
+                <p>现象：被打印物品经过时光电不触发<br>
+                解决：光电传感器设置问题，顺时针调节光电传感器尾部螺丝至型号灯亮</p>
+
+                <h3>Q: 光电插头接线松开</h3>
+                <p>A：</p>
+                <p>现象：观察接头接线是否掉出或短路<br>
+                解决：线被拉扯，更换光电感应器或按照原来的线序修复接线</p>
+
+                <h3>Q: 光电感应器触发但设备无响应</h3>
+                <p>A：</p>
+                <p>现象：光电感应器的灯变化正常，但机器无响应<br>
+                解决：考虑光电感应器损坏或主板损坏，先建议对光电进行更换，如问题无法排除，则考虑主板问题。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

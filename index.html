@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.example.com/your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+        }
+
+        header {
+            background-color: #4A90E2;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .navbar {
+            background-color: #357ABD;
+            overflow: hidden;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .navbar a {
+            color: #f4f4f4;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: #2C6DAC;
+        }
+
+        .search-box {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .search-box input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4A90E2;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-box button:hover {
+            background-color: #357ABD;
+        }
+
+        .index {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .index h2 {
+            color: #4A90E2;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .index ul {
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .index ul li {
+            margin: 0 10px;
+        }
+
+        .index ul li a {
+            display: none; /* Hide the old links */
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .content h3 {
+            margin-top: 0;
+            color: black;
+            font-family: 'SimHei', '黑体', sans-serif; /* Set font to black体 */
+            font-weight: bold; /* Make text bold */
+            margin-bottom: 20px; /* Increase spacing between h3 and following content */
+        }
+
+        .content h3 a {
+            color: black; /* Ensures the link text color matches the h3 text color */
+            text-decoration: none; /* Removes underline from links */
+        }
+
+        .content h3 a:hover {
+            text-decoration: underline; /* Underline on hover for better accessibility */
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding: 0 3px;
+        }
+
+        .link-highlight {
+            font-weight: bold; /* Maintain original font-weight for links */
+        }
+
+        /* Responsive Image */
+        .index img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media Query for Larger Screens */
+        @media (min-width: 1200px) {
+            .index img {
+                width: 1160px;
+                height: auto;
+            }
+        }
+ </style>
+</head>
+<body>
+    <script>
+        // 检查用户是否已经登录
+        if (localStorage.getItem('loggedIn') !== 'true'
+) {
+            window.location.href = 'login.html'; // 未登录时重定向到登录页面
+        }
+    </script>
+
+
+    <header>
+        <h1>售后支持</h1>
+    </header>
+
+    <div class="container">
+        <!-- 导航菜单 -->
+        <div class="navbar">
+            <a href="index.html">常见问题</a>
+            <a href="near index.html">售后视频</a>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search-box">
+            <input type="text" id="search" placeholder="输入关键词...">
+            <button onclick="searchFunction()">搜索</button>
+        </div>
+
+        <!-- 索引 -->
+        <div class="index">
+            <img src="image/p1.png" alt="索引图">
+
+            <h2>目录</h2>
+  
+        <!-- 内容 -->
+        <div class="content" id="faq">
+            <div id="charging">
+                <h3><a href="充电问题.html" class="link-highlight">充电问题</a></h3>
+                <p>充不进电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;充电只有99%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;掉电很快&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只能边充边用</p><br>
+            </div>
+            <div id="screen">
+                <h3><a href="屏幕与外观问题.html" class="link-highlight">屏幕与外观问题</a></h3>
+                <p>手持机屏幕闪烁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;屏幕有水印&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;屏幕横向有线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;屏幕竖向有线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;触摸干扰错乱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;屏幕误触&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部分触摸无反应&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;屏幕显示偏移&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;屏幕背光不亮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;白屏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黑屏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;触摸没反应&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按钮不回弹或者按不下去&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;辊轮不流畅</p><br>
+            </div>
+            <div id="power">
+                <h3><a href="开机.html" class="link-highlight">开关机卡机时间问题</a></h3>
+                <p>卡机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开机后自动关机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开不了机(排除黑屏)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开机进不了系统&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开机时间变初始</p><br>
+            </div>
+            <div id="optical">
+                <h3><a href="光电.html" class="link-highlight">光电问题</a></h3>
+                <p>打印物体为透明颜色&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;光电传感器触发没反应（光电太灵敏）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;光电传感器没反应（光电灵敏度低）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;光电插头接线松开&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;光电感应器触发但设备无响应</p><br>
+            </div>
+            <div id="printing">
+                <h3><a href="打印.html" class="link-highlight">打印异常问题</a></h3>
+                <p>打印不清晰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打印无反应&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打印不出墨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打印断线（空缺）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打印露白&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打印首字母模糊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分组打印异常</p><br>
+            </div>
+            <div id="cartridge">
+                <h3><a href="墨盒.html" class="link-highlight">墨盒相关问题</a></h3>
+                <p>打印效果差，不清晰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;芯片无法识别</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchFunction() {
+            const input = document.getElementById('search');
+            const filter = input.value.toUpperCase();
+            const elements = document.querySelectorAll('h2, h3, p');
+
+            elements.forEach(element => {
+                const originalHTML = element.innerHTML;
+                const regex = new RegExp(`(${filter.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')})`, 'gi');
+                if (filter && regex.test(element.textContent)) {
+                    element.innerHTML = originalHTML.replace(regex, `<span class="highlight">$1</span>`);
+                } else {
+                    element.innerHTML = originalHTML;
+                }
+            });
+        }
+
+        // Highlight the section corresponding to clicked index item
+        document.querySelectorAll('.index ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 60, // Adjust to account for header height
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
